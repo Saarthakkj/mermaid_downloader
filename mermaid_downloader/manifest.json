@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Mermaid SVG Downloader",
+  "version": "1.0",
+  "description": "Download Mermaid SVG diagrams as images",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+} 
